@@ -1,0 +1,31 @@
+INSTALL JAVA
+sudo apt install openjdk-8-jdk
+
+ADD JENKINS REPO
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+INSTALL JENKINS
+sudo apt install jenkins
+
+JENKINS STARTS AUTOMATICALLY
+
+
+ADJUST FIREWALL
+sudo ufw allow 8080
+
+
+
+192.168.0.18:8080/job/GNATTest/build?token=admin or /buildWithParameters?token=admin
+
+gnattest -P/home/edward/Projects_Ada/obj/gnattest/harness/test_driver.gpr /home/edward/Projects_Ada/src/main.adb 
+
+gprbuild -d -P/home/edward/Projects_Ada/obj/gnattest/harness/test_driver.gpr /home/edward/Projects_Ada/obj/gnattest/harness/test_runner.adb
+/home/edward/Projects_Ada/obj/gnattest/harness/test_runner
+
+
+INITIATE TEST
+http://192.168.0.18:8080/job/GNATTest/build?token=admin
+
+
+

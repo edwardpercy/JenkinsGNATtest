@@ -1,0 +1,12 @@
+/home/edward/Projects_Ada/obj/gnattest/harness/test_runner
+operations.ads:3:4: info: corresponding test PASSED
+operations.ads:4:4: info: corresponding test PASSED
+2 tests run: 2 passed; 0 failed; 0 crashed.
+[2020-09-25 12:11:43] process terminated successfully, elapsed time: 00.19s
+
+%builder %eL %config %autoconf %X %TT
+
+gprbuild -d -P/home/edward/Projects_Ada/default.gpr /home/edward/Projects_Ada/src/main.adb
+gprbuild -d -P/home/edward/Projects_Ada/obj/gnattest/harness/test_driver.gpr /home/edward/Projects_Ada/obj/gnattest/harness/test_runner.adb
+/home/edward/Projects_Ada/obj/gnattest/harness/test_runner
+
